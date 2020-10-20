@@ -11,9 +11,9 @@ public class Main extends JavaPlugin {
     public void onEnable(){
         Bukkit.getPluginManager().registerEvents(new Comandos(), this);
         Bukkit.getPluginManager().registerEvents(new Admin(), this);
-        Bukkit.getPluginManager().registerEvents(new Warn(), this);
 
         getCommand("admin").setExecutor(new Comandos());
+        getCommand("warn").setExecutor(new Comandos());
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "TheIStaff foi inciado corretamente.");
     }

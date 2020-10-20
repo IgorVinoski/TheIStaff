@@ -4,3 +4,4 @@ main: me.theigoro.Main
 author: TheIgoro
 commands:
   admin:
+  warn:
