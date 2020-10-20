@@ -1,0 +1,6 @@
+name: TheIStaff
+version: 1.0
+main: me.theigoro.Main
+author: TheIgoro
+commands:
+  admin:
