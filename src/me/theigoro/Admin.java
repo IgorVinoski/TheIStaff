@@ -20,7 +20,7 @@ public class Admin implements Listener {
 
 
 
-    @EventHandler
+
     public static void AdminModeON(Player p){
     p.setFoodLevel(20);
     p.setHealth(20);
@@ -42,7 +42,7 @@ public class Admin implements Listener {
 
 
     }
-    @EventHandler
+
 public static void AdminModeOFF(Player p){
     p.sendMessage("Removido");
     p.setFlying(false);
