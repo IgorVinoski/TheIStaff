@@ -6,6 +6,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import static me.theigoro.Admin.player;
+
 public class StaffChat implements CommandExecutor {
 
 
@@ -25,16 +27,18 @@ public class StaffChat implements CommandExecutor {
            }
            else{
                String message = "[S] " + p.getDisplayName() + ":";
-               for (int i = 0; i < args.length; i++ ) {
-                   message = message +" "+ args[i];
-               }
+               StringBuilder msg = new StringBuilder(message);
+               for (int i = 0; i < args.length; i++ )
+                   msg.append(" " + args[i]);
 
-
-               for (Player player : Bukkit.getOnlinePlayers()){
-                   if (player.hasPermission("theistaff.chat")) {
-                       player.sendMessage(message);
+               for (Player player : Bukkit.getOnlinePlayers()) {
+                   if (player.hasPermission("theistaff.staff")) {
+                       player.sendMessage(msg.toString());
                    }
                }
+
+
+
            }
 
 
