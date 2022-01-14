@@ -1,6 +1,7 @@
 package me.theigoro;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -33,7 +34,7 @@ public class StaffChat implements CommandExecutor {
 
                for (Player player : Bukkit.getOnlinePlayers()) {
                    if (player.hasPermission("theistaff.staff")) {
-                       player.sendMessage(msg.toString());
+                       player.sendMessage(ChatColor.translateAlternateColorCodes('&', msg.toString()));
                    }
                }
 
