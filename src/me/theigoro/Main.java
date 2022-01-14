@@ -7,13 +7,21 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
+
+
     @Override
     public void onEnable(){
         Bukkit.getPluginManager().registerEvents(new Comandos(), this);
         Bukkit.getPluginManager().registerEvents(new Admin(), this);
 
+        getCommand("s").setExecutor(new StaffChat());
         getCommand("admin").setExecutor(new Comandos());
         getCommand("warn").setExecutor(new Comandos());
+        getCommand("caminhao").setExecutor(new Comandos());
+
+
+
+
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "TheIStaff foi inciado corretamente.");
     }
