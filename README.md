@@ -7,7 +7,7 @@ O plugin tem o intuito de auxiliar a moderação do servidor, com comandos que s
 | ------------- | ------------- | ------------- |
 | /admin| theistaff.admin | Ficar no modo admin, voando, e invisível para outros jogadores. |
 | /warn <jogador> <motivo>  | theistaff.warn  | Envia um alerta para um jogador. |
-| /s <mensagem> | theistaff.chat | FChat entre os membros da equipe. |
+| /s <mensagem> | theistaff.chat | Chat entre os membros da equipe. |
 
 
 
